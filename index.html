@@ -104,6 +104,7 @@
           <li>
             The <b>footer</b> element appears at the botom of the page and usually
             includes the author, copyright, contact, sitemap, and navigation.
+            <br></br>
           </li>
         </ul>
       </section>
@@ -134,16 +135,58 @@
             an element.
           </li>
           <li>Assiging colours in CSS can be done semantically (ex: blue, grey...) or by using your desired colours hex #.</li>
+          <br></br>
         </ul>
       </section>
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
-          <li>git status: checks what branch we are currently on</li>
+          <br><h4>Definitions</h4></br>
+          <li><b>Git</b> is a version control system that lets you manage and keep track of each version of your project.</li>
+          
+          <br><h4>Getting Started</h4></br>
+          <li><b>Git</b> is great for tracking changes locally on your own computer, but to collaborate with others, you need to use another tool, <b>GitHub.</b></li>
+          <li><b>GitHub</b> is a cloud-based hosting service that allows us to keep track of our projects inside repositories that are stored remotely.</li>
+          <li>Using <b>GitHub</b> not only allows us to store our code, but also to easily collaborate with others.</li>
+          <li><b>GitHub</b> is connected to <b>Git</b>, which is software on your computer that tracks changes that you make to your code.</li>
+          <li>Your local machine can be connected to your <b>GitHub</b> using your <b>SSH keys.</b></li>
+          <li>To acess <b>Git</b>, we use the command line or terminal.</li>
+          <br><h4>GitHub Terminology</h4></br>
+          <li><b>Repository (repo)</b> a folder in which all files and their version are stored.</li>
+          <li><b>Branch</b> a workspace in which you can make changes that won't affect the live site.</li>
+          <li><b>Markdown (.md)</b> a way to write in GitHub that converts plain text to GitHub code.</li>
+          <li><b>Commit Changes</b> a saved record of a change made to a file ithin the repo.</li>
+          <li><b>Pull Request (PR)</b> the way to ask for changes made to a branch to be merged into another branch that also allows for multiple users to see, discuss and review work being done.</li>
+          <li><b>Merge</b> after a pull request is approved, the commit will be pulled in (or merged) from one branch to another and then, deployed to the live site.</li>
+          <li><b>Issues</b> how work is tracked when using git. Issues allow user to reporet new tasks and content fixes, as well as allows users to track progress opn a project board from beginning to end of a specific project.</li>
+        
+          <br><h4>Git Commands</h4></br>
+          <h5>Set Up</h5>
+        <br></br>
+          <li><b>git config --global user.name “[firstname lastname]”</b> set a name that is identifiable for credit when review version history.</li>
+          <li><b>git config --global user.email “[valid-email]”</b> set an email address that will be associated with each history marker.</li>
+          <br><h5>Set Up and Initalization</h5></br>
+          <li><b>git init</b> initialize an existing directory as a Git repository.</li>
+          <li><b>git clone [url]</b> retrieve an entire repository from a hosted location via URL.</li>
+          <br><h5>Stage and Snapshot</h5></br>
+          <li><b>git status</b> checks what branch we are currently on.</li>
+          <li><b>git add [file]</b> add a file as it looks now to your next commit (stage). </li>
+          <li><b>got commit -m "[descriptive message]"</b> commit your staged content as a new commit snapshot.</li>
+          <br><h5>Branch and Merge</h5></br>
+          <li><b>git branch</b> list your branches.a * will appear next to the crrently active branch.</li>
+          <li><b>git branch [branch-name]</b> create a new branch at the current commit.</li>
+          <li><b>git checkout</b> switch to another branch and check it out into your working directory.</li>
           <li>
-            git checkout -b branch-name: creates a new branch and switches to it
+            <b>git checkout -b branch-name</b> creates a new branch and switches to it.
           </li>
+          <li><b>git merge [branch]</b> merge the specified branch's history into tyhe current one.</li>
+          <br><h5>Share and Update</h5></br>
+          <li><b>git push [alias] [branch]</b> Transmit local branch commit to the remote repository branch.</li>
+          <li><b>git pull</b> fetch and merge any commits from the tracking remote branch.</li>
+          <a href="https://education.github.com/git-cheat-sheet-education.pdf">For more Git commands click here</a>
+          <br></br>
         </ul>
+
       </section>
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
