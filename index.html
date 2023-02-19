@@ -22,7 +22,7 @@
         <ul>
           <br><h4>Definition</h4></br>
           <li>
-            HTML elements define the content and the framework of a webpage.
+            <b>HTML</b> elements define the content and the framework of a webpage.
           </li>
           <br><h4>Types</h4></br>
           <li>
@@ -99,11 +99,12 @@
             webpage or other webpages.
           </li>
           <li>
-            The opening anchor tag includes a <b>href=</b>followed by your link.
+            The opening anchor tag includes a <b>href=</b> followed by your link.
           </li>
           <li>
             The <b>footer</b> element appears at the botom of the page and usually
             includes the author, copyright, contact, sitemap, and navigation.
+            <br></br>
           </li>
         </ul>
       </section>
@@ -116,16 +117,17 @@
           <li> <b>Inline CSS</b> is used when a developer wants to style an element directly in the HTML file.</li>
           <li><b>Internal CSS Style Sheet</b> embeds an entire style sheet directly into the HTML file, in the style tag element, within the head element.</li>
           <li><b>External Style Sheets</b> links a file using a link element placed in the HTML's head element.</li>
-          <li> <b>External Style Sheet</b> is the prefewrred method, as it makes design changes easier.</li>
+          <li> <b>External Style Sheet</b> is the preferred method, as it makes design changes easier.</li>
+          <li><b>External stylesheets</b> are linked between the head tags of the html using the link element.</li>
           <br><h4>Getting Started</h4></br>
           <li><b>CSS Rule</b> includes a selector and one or more properties with their values in the declaration block.</li>
-          <li> <b>Selector:</b> defines the element or attribute to which the rules, or declarations apply.</li>
-          <li><b>Declaration:</b> Includes the property(ex: colour) we want to apply the value to, and the value (ex: blue). </li>
+          <li> <b>Selector</b> defines the element or attribute to which the rules, or declarations apply.</li>
+          <li><b>Declaration</b> includes the property(ex: colour) we want to apply the value to, and the value (ex: blue). </li>
           <li>Example: Selector { Property: Value; Property: Value;}.</li>
           <li>CSS rules can apply to more than one selector (ex: header and footer) by adding a comma between the desired selectors.</li>
           <li>Rather than repeating a rule which would add more lines of code and repetition, two or more elements that will share the same styling can be grouped together. This helps us write Do Not Repeat Yourself (DRY) code.</li>
           <li>To apply a rule to all of the visible elements on the page we use a <b>*</b> as the selector</li>
-          
+          <li><b>CSS box model</b> describes every HTML element essentially being a box that consists of margins outside the element, the element's boarders, padding and content.</li>
             <li>A <b>margin</b> indicates how much space we want around the outside of an
             element.</li>
           </li>
@@ -133,25 +135,87 @@
             A <b>padding</b> indicates how much space we want around the content inside
             an element.
           </li>
-          <li>Assiging colours in CSS can be done semantically (ex: blue, grey...) or by using your desired colours hex #.</li>
+          <li>Assiging colours in CSS can be done semantically (ex: blue, grey...) or by using your desired colours hex #. These can found on this <a href="https://htmlcolorcodes.com/" target="blank">HTML Colour Codes Website</a></li>
+          <br></br>
         </ul>
       </section>
       <section class="card" id="git-section">
         <h2>Git</h2>
         <ul>
-          <li>git status: checks what branch we are currently on</li>
+          <br><h4>Definition</h4></br>
+          <li><b>Git</b> is a version control system that lets you manage and keep track of each version of your project.</li>
+          
+          <br><h4>Getting Started</h4></br>
+          <li><b>Git</b> is great for tracking changes locally on your own computer, but to collaborate with others, you need to use another tool like <b>GitHub.</b></li>
+          <li><b>GitHub</b> is a cloud-based hosting service that allows us to keep track of our projects inside repositories that are stored remotely.</li>
+          <li>Using <b>GitHub</b> not only allows us to store our code, but also to easily collaborate with others.</li>
+          <li><b>GitHub</b> is connected to <b>Git</b>, which is software on your computer that tracks changes that you make to your code.</li>
+          <li>Your local machine can be connected to your <b>GitHub</b> using your <b>SSH keys.</b></li>
+          <li>To acess <b>Git</b>, we use the command line or terminal.</li>
+          <br><h4>GitHub Terminology</h4></br>
+          <li><b>Repository (repo)</b> a folder in which all files and their version are stored.</li>
+          <li><b>Branch</b> a workspace in which you can make changes that won't affect the live site.</li>
+          <li><b>Markdown (.md)</b> a way to write in GitHub that converts plain text to GitHub code.</li>
+          <li><b>Commit Changes</b> a saved record of a change made to a file ithin the repo.</li>
+          <li><b>Pull Request (PR)</b> the way to ask for changes made to a branch to be merged into another branch that also allows for multiple users to see, discuss and review work being done.</li>
+          <li><b>Merge</b> after a pull request is approved, the commit will be pulled in (or merged) from one branch to another and then, deployed to the live site.</li>
+          <li><b>Issues</b> how work is tracked when using git. Issues allow user to reporet new tasks and content fixes, as well as allows users to track progress opn a project board from beginning to end of a specific project.</li>
+        
+          <br><h4>Git Commands</h4></br>
+          <h5>Set Up</h5>
+        <br></br>
+          <li><b>git config --global user.name “[first name last name]”</b> set a name that is identifiable for credit when review version history.</li>
+          <li><b>git config --global user.email “[valid-email]”</b> set an email address that will be associated with each history marker.</li>
+          <br><h5>Set Up and Initalization</h5></br>
+          <li><b>git init</b> initialize an existing directory as a Git repository.</li>
+          <li><b>git clone [url]</b> retrieve an entire repository from a hosted location via URL.</li>
+          <br><h5>Stage and Snapshot</h5></br>
+          <li><b>git status</b> checks what branch we are currently on.</li>
+          <li><b>git add [file]</b> add a file as it looks now to your next commit (stage). </li>
+          <li><b>got commit -m "[descriptive message]"</b> commit your staged content as a new commit snapshot.</li>
+          <br><h5>Branch and Merge</h5></br>
+          <li><b>git branch</b> lists your branches. A * will appear next to the active branch.</li>
+          <li><b>git branch [branch-name]</b> creates a new branch at the current commit.</li>
+          <li><b>git checkout</b> switches to another branch and checks it out into the working directory.</li>
           <li>
-            git checkout -b branch-name: creates a new branch and switches to it
+            <b>git checkout -b branch-name</b> creates a new branch and switches to it.
           </li>
+          <li><b>git merge [branch]</b> merges the specified branch's history into the current one.</li>
+          <br><h5>Share and Update</h5></br>
+          <li><b>git push [alias] [branch]</b> transmits local branch commit to the remote repository branch.</li>
+          <li><b>git pull</b> fetches and merges any commits from the tracking remote branch.</li>
+          <br></br>
+          <a href="https://education.github.com/git-cheat-sheet-education.pdf" target="blank">More Git commands</a>
+          <br></br>
         </ul>
+
       </section>
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li><ul>
-            <li>A variable is a named container that allows us to store data in our code.</li>
-            <li>Control flow is the order in which a computer executes code in a script.</li>
-          </ul></li>
+          <br><h4>Definition</h4></br>
+          <li><b>JavaScript</b> is a programming language that adds interactivity to your website.</li>
+          <br><h4>Getting Started</h4></br>
+          <li>You see your JavaScript in action by connecting the script.js to the index.html.</li>
+          <li>Using the <b>script</b> tags insert the link at the bottom of your HTML under the <b>footer</b> element.</li>
+          <br><h4>Terminology</h4></br>
+            <li>A <b>variable</b> is a named container that allows us to store data in our code.</li>
+            <li><b>String</b> includes all of the topics that your variable will apply to.</li>
+            <li>An <b>array</b> is a single variable that is used to hold a group of data that is typically related in some way.</li>
+            <li><b>Index</b> is a unique number that identifies the location of the data item in an array.</li>
+            <li>A <b>for loop</b> uses the predictable pattern of indices to perform a task on all items in an array by allowing a single code block to be executed over and over.</li>
+            
+            <li><b>Comments</b> are snippets of text that can be added along with code. The browser ignores text marked as comments.</li>
+            <li>Single line comments start with //</li>
+            <li>Multiline comments, or block comments start with /* and end with */</li>
+            <li><b>Commenting out code</b> makes it inactive without deleting it, just incase you need it later.</li>
+            <li><b>Functions</b> are a set of instructions that tells a computer how to perform a certain task.</li>
+            <li><b>Control flow</b> is the order in which a computer executes code in a script.</li>
+            <li><b>Operators</b> are mathematical symbols that produce a result based on two values (or variables).</li>
+            <li><b>Conditionals</b> are code structures used to test if an expression returns true or not.</li>
+            <li><b>True</b> if a statement meets a condition.</li>
+            <li><b>False</b> of a statement does not meet a condition.</li>
+          <br></br>
         </ul>
       </section>
     </main>
